@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceMono.className} transition-colors duration-300 bg-ghost-white dark:bg-mirage px-6 lg:grid lg:place-content-center lg:min-h-screen `}
+        className={`${spaceMono.className} transition-colors duration-300 bg-ghost-white dark:bg-mirage px-6  `}
       >
         <Provider>{children}</Provider>
       </body>
