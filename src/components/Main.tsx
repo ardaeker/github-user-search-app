@@ -227,9 +227,13 @@ export default function Main() {
                     </p>
                   </div>
                 </div>
-                {user?.bio && (
-                  <p className="text-[0.76rem] md:text-body font-normal leading-[1.5625rem] text-metallic-blue mx-auto dark:text-white">
+                {user?.bio ? (
+                  <p className="text-[0.76rem] md:text-body font-normal leading-[1.5625rem] text-metallic-blue  dark:text-white">
                     {user?.bio}
+                  </p>
+                ) : (
+                  <p className="text-[0.76rem] md:text-body font-normal leading-[1.5625rem] text-metallic-blue  dark:text-white">
+                    This profile has no bio
                   </p>
                 )}
 
