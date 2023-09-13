@@ -215,13 +215,15 @@ export default function Main() {
                       />
                     )}
                   </div>
-                  <div>
-                    <h2 className="text-h3 md:text-h1 font-bold text-dark-slate dark:text-white">
-                      {user?.name}
-                    </h2>
-                    <span className="text-h4 md:text-h3 font-normal text-blue ">
-                      @{user?.login}
-                    </span>
+                  <div className="lg:flex lg:justify-between lg:w-full">
+                    <div>
+                      <h2 className="text-h3 md:text-h1 font-bold text-dark-slate dark:text-white">
+                        {user?.name}
+                      </h2>
+                      <span className="text-h4 md:text-h3 font-normal text-blue ">
+                        @{user?.login}
+                      </span>
+                    </div>
                     <p className="text-h4 md:text-body font-normal text-greyish-blue mt-2 dark:text-white">
                       Joined 25 Jan 2011
                     </p>
