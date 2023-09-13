@@ -127,7 +127,7 @@ export default function Main() {
   }
 
   return (
-    <main className=" w-full mt-9 md:max-w-xl md:mx-auto lg:max-w-3xl ">
+    <main className=" w-full lg:min-w-[45.625rem] mt-9 md:max-w-xl md:mx-auto lg:max-w-3xl ">
       <div className="w-full relative">
         <form className="relative z-20" onSubmit={handleSubmit}>
           <input
