@@ -186,10 +186,10 @@ export default function Main() {
             variants={containerVariant}
             transition={{ type: "spring", ease: "linear", duration: 0.65 }}
           >
-            <div className="lg:flex lg:justify-between lg:gap-9 mt-4 w-full p-6 md:p-10 lg:p-12 duration-300 shadow-container dark:shadow-none rounded-2xl bg-milk-white dark:bg-blue-zodiac ">
+            <div className="lg:flex  lg:gap-9 mt-4 w-full p-6 md:p-10 lg:p-12 duration-300 shadow-container dark:shadow-none rounded-2xl bg-milk-white dark:bg-blue-zodiac ">
               <motion.div
                 variants={containerItemVariants}
-                className="hidden h-16 w-16 md:h-28 md:w-28 overflow-hidden rounded-full lg:inline-block relative"
+                className="hidden h-16 w-16 md:h-28 md:min-w-[7rem] overflow-hidden rounded-full lg:inline-block relative"
               >
                 {user?.avatar_url && (
                   <Image
@@ -203,10 +203,10 @@ export default function Main() {
 
               <motion.div
                 variants={containerItemVariants}
-                className="flex flex-col gap-6 md:gap-8 lg:max-w-[30rem]"
+                className="flex flex-col gap-6 md:gap-8 w-full"
               >
-                <div className="flex gap-5 md:gap-10 items-center">
-                  <div className="h-16 w-16 md:h-28 md:w-28 bg-sky-400 rounded-full lg:hidden relative overflow-hidden">
+                <div className="flex gap-5  items-center">
+                  <div className="h-16 w-16 md:mr-10 md:h-28 md:w-28 bg-sky-400 rounded-full lg:hidden relative overflow-hidden">
                     {user?.avatar_url && (
                       <Image
                         src={user?.avatar_url}
